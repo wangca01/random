@@ -1,7 +1,7 @@
 
 # Unigram Language Model Analysis (2.5 points)
 <table>
-<tr><th>Train Set </th><th>Dev set</th><th>Test set</th></tr>
+<tr><th>Train Set </th><th>Dev set</th></tr>
 <tr><td>
    
 |            | brown |   reuters |   gutenberg|
@@ -20,7 +20,12 @@
 |reuters    |3808.87    |1479.09      |4833.88|
 | gutenberg |2604.28  |12256.3    |   991.5|
     
-</td><td>
+</td></tr> </table>
+
+
+<table>
+<tr><th>Test set</th></tr>
+<tr><td>
 
 |           |  brown  |  reuters   | gutenberg|
 |--------- | -------  |---------  |-----------|
@@ -29,7 +34,6 @@
 |gutenberg | 2626.05  | 12392.5    |   1005.79|
 
 </td></tr> </table>
-
 (Baseline unigram 3 x 3 perplexities)
 
 ## Analysis on In-Domain Text (1 point)
@@ -99,7 +103,7 @@ train set. The model trained on Brown's training data has a slightly lower perpl
 
 Gutenberg and Brown have a more similar corpus than with Reuters. Reuters corpus is closer to Brown than to Gutenberg. In conclusion, Gutenberg and Brown are closer.  
 <table>
-<tr><th>Train Set </th><th>Dev set</th><th>Test set</th></tr>
+<tr><th>Test set</th></tr>
 <tr><td>
 
 |          |     brown  |  reuters  |  gutenberg|
@@ -118,6 +122,18 @@ Gutenberg and Brown have a more similar corpus than with Reuters. Reuters corpus
 |gutenberg  |   2837.17     |     8125.54     |     1037.71|
     
 </td><td>
+
+|       | brown  |  reuters |   gutenberg|
+|--------- | ------- | ---------|  -----------|
+|brown     | 1723.51 |   5538.64 |     3903.03
+|reuters  |  3814.63    |   584.27    |       6925.38|
+|gutenberg  |   2859.38     |     8077.76      |     1047.96|
+
+</td></tr> </table>
+   
+   <table>
+<tr><th>Train Set </th><th>Dev set</th><th>Test set</th></tr>
+<tr><td>
 
 |       | brown  |  reuters |   gutenberg|
 |--------- | ------- | ---------|  -----------|
